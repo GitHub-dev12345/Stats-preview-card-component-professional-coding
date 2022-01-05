@@ -104,14 +104,14 @@ main{
 
 
 /* footer attribution css code */
-.attribution{
+footer{
     font-size: 1.2rem;
     color: white;
     margin-top: 30px;
     padding: 20px;
 }
 
-.attribution a{
+footer a{
     text-decoration: none;
     color: yellow;
 }
@@ -127,6 +127,14 @@ main{
 @media screen and (max-width: 1170px) {
     main{
         padding: 40px;
+    }
+
+    .card .mainpic{
+        background: url('images/image-header-mobile.jpg') 
+        hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .content{
@@ -172,7 +180,9 @@ main{
     .card .mainpic{
         min-height: 250px; 
         min-width: 100px;
-        background: url('images/image-header-mobile.jpg');
+        background: url('images/image-header-mobile.jpg') 
+        hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-size: cover;
     }
