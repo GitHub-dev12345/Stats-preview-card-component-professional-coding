@@ -113,6 +113,8 @@ footer{
     color: white;
     margin-top: 30px;
     padding: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
     text-align: center;
 }
 
