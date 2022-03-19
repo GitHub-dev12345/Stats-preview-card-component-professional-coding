@@ -1,0 +1,205 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+
+/* Universal Selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body Design CSS Code */
+body{
+    width: 1440px;
+    margin: auto;
+    background-color: hsl(233, 47%, 7%);
+}
+
+/* Card View css code design */
+main{
+    margin-top: 140px;
+}
+
+/* Inner Main Container Card Design CSS Code */
+.card{
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    border-radius: 12px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+/* Card ImageColor CSS Code */
+.imgcolor{
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* inner card content css code */
+.content{
+    padding: 80px;
+    h1{
+        font-size: 2.1rem;
+        font-family: 'Inter', sans-serif;
+        color: hsl(0, 0%, 100%);
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 15px;
+        margin-top: 25px;
+        margin-right: 20px;
+        padding: auto;
+        line-height: 1.5rem;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+.insi{
+    color: hsl(277, 64%, 61%);
+}
+
+/* stats counting css code */
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-right: 60px;
+    div{
+        font-family: 'Inter', sans-serif;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: hsl(0, 0%, 100%);
+    }
+}
+
+/* Stats name CSS Code */
+.name{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* card img css code and box css code */
+.mainpic{
+    min-height: 445px;
+    min-width: 535px;
+    background: url('../images/image-header-desktop.jpg') no-repeat center right / cover;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Image Color CSS Code */
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: #a743d6;
+    mix-blend-mode: multiply;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* footer css code */
+footer{
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+    a{
+        color: yellow;
+        cursor: pointer;
+        &:hover{
+            text-decoration: none;
+            color: red;
+        }
+    }
+}
+
+/* Responsive design css code */
+@media screen and (max-width: 1500px) {
+    body{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    main{
+        padding: 40px;
+        margin-top: 0px;
+        transition: 0.3s;
+    }
+    .mainpic{
+        background: url('../images/image-header-mobile.jpg') 
+        hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 0px;
+    }
+    .content{
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        padding: 10px;
+        h1{
+            text-align: center;
+        }
+        P{
+            text-align: center;
+        }
+    }
+    .stats{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 5px;
+        div{
+            padding: 15px;
+            text-align: center;
+        }
+    }
+        
+    .card{
+        flex-direction: column-reverse;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .mainpic{
+        min-height: 250px; 
+        min-width: 100px;
+        background: url('../images/image-header-mobile.jpg') 
+        hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        h1{
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 1.7rem;
+        }
+        p{
+            margin-top: 20px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+    .stats{
+        margin-top: 20px;
+        div{
+            font-size: 1.1rem;
+        }
+    }
+}

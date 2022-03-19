@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+/* Universal Selector */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Body Design CSS Code */
+body {
+  width: 1440px;
+  margin: auto;
+  background-color: #090b1a;
+}
+
+/* Card View css code design */
+main {
+  margin-top: 140px;
+}
+
+/* Inner Main Container Card Design CSS Code */
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  border-radius: 12px;
+  background-color: #1b1938;
+}
+
+/* Card ImageColor CSS Code */
+.imgcolor {
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* inner card content css code */
+.content {
+  padding: 80px;
+}
+
+.content h1 {
+  font-size: 2.1rem;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  margin-top: 25px;
+  margin-right: 20px;
+  padding: auto;
+  line-height: 1.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.insi {
+  color: #aa5cdb;
+}
+
+/* stats counting css code */
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  margin-right: 60px;
+}
+
+.stats div {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Stats name CSS Code */
+.name {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 13px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* card img css code and box css code */
+.mainpic {
+  min-height: 445px;
+  min-width: 535px;
+  background: url("../images/image-header-desktop.jpg") no-repeat center right/cover;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Image Color CSS Code */
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: #a743d6;
+  mix-blend-mode: multiply;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* footer css code */
+footer {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 30px;
+  padding: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+footer a {
+  color: yellow;
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/* Responsive design css code */
+@media screen and (max-width: 1500px) {
+  body {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  main {
+    padding: 40px;
+    margin-top: 0px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .mainpic {
+    background: url("../images/image-header-mobile.jpg") #aa5cdb;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 0px;
+  }
+  .content {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 10px;
+  }
+  .content h1 {
+    text-align: center;
+  }
+  .content P {
+    text-align: center;
+  }
+  .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 5px;
+  }
+  .stats div {
+    padding: 15px;
+    text-align: center;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .mainpic {
+    min-height: 250px;
+    min-width: 100px;
+    background: url("../images/image-header-mobile.jpg") #aa5cdb;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content h1 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  .content p {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .stats {
+    margin-top: 20px;
+  }
+  .stats div {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
